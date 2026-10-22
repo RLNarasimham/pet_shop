@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Deploy Application/Software using Apache Tomcat'){
             steps{
-                deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'PET_SHOP_COMP_PIPELINE_CREDS', path: '', url: 'http://40.192.58.152:8090/')], contextPath: 'pet_shop_app', war: '**/*.war'
+                deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'PET_SHOP_COMP_PIPELINE_CREDS', path: '', url: 'http://18.61.72.51:8090/')], contextPath: 'pet_shop_app', war: '**/*.war'
             }
         }
     }
